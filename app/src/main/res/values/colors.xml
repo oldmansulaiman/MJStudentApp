@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorBackground">#607d8b</color>
     <color name="colorItem">#f8bbd0</color>
+    <color name="colorTabTitle">#FFFFFF</color>
 </resources>

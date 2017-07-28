@@ -1,17 +1,22 @@
 package com.example.admin.mjstudentapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class AboutActivity extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemReselectedListener {
 
     Toolbar toolbar;
+    BottomNavigationView bottomNavigationView;
+    TextView txt;
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -30,6 +35,11 @@ public class AboutActivity extends AppCompatActivity {
             startActivity(loginActivityIntent);
             finish();
         }
+
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation_id);
+        txt = (TextView) findViewById(R.id.text_id);
+
+        bottomNavigationView.setOnNavigationItemReselectedListener(this);
 
     }
 
@@ -57,5 +67,30 @@ public class AboutActivity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onNavigationItemReselected(@NonNull MenuItem item) {
+
+        int id = item.getItemId();
+
+        switch (id) {
+
+            case R.id.bushra_id:
+
+                txt.setText(getResources().getText(R.string.bushra));
+                break;
+
+            case R.id.sulaiman_id:
+
+                txt.setText(getResources().getText(R.string.sulaiman));
+                break;
+
+            case R.id.special_id:
+
+                txt.setText(getResources().getText(R.string.special_thanks));
+                break;
+        }
+
     }
 }
