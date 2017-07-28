@@ -6,12 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class AttendActivity extends AppCompatActivity {
 
@@ -25,35 +27,32 @@ public class AttendActivity extends AppCompatActivity {
         setContentView(R.layout.activity_attend);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final TextView news1 = (TextView) findViewById(R.id.news_text1);
         final DatabaseReference myref = database.getReference();
-
-        FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        String uid = currentFirebaseUser.getUid();
-
-        if (uid.equals((myref.child("users").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1")).toString())) {
-            Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_LONG).show();
-
-        } else if (uid.equals(myref.child("users").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1").toString())) {
-            Toast.makeText(getApplicationContext(), "SUCCESS2", Toast.LENGTH_LONG).show();
-        } else if (uid.equals(myref.child("users").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1").child("uid").toString())) {
-            Toast.makeText(getApplicationContext(), "SUCCESS3", Toast.LENGTH_LONG).show();
-        } else if (uid.equals((myref.child("users").child("pNzmDClyLyWiQeWnDC4E3Jqxzpr1").child("uid")).toString())) {
-            Toast.makeText(getApplicationContext(), "SUCCESS4" +
-                    "", Toast.LENGTH_LONG).show();
-        }
-
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         firebaseAuth = FirebaseAuth.getInstance();
         if (firebaseAuth.getCurrentUser() == null) {
             Intent loginActivityIntent = new Intent(AttendActivity.this, LoginActivity.class);
             startActivity(loginActivityIntent);
             finish();
         }
+
+        database.getReference("news").child("01").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String value = dataSnapshot.getValue(String.class);
+                news1.setText(value);
+            }
+
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
     }
 
