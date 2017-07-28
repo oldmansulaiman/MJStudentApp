@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,9 +28,12 @@ public class AttendActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attend);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final TextView news1 = (TextView) findViewById(R.id.news_text1);
-        final DatabaseReference myref = database.getReference();
+        Button send = (Button) findViewById(R.id.send);
+        final TextView attend = (TextView) findViewById(R.id.percentage);
+
+        final FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = firebaseDatabase.getReference();
+
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -40,17 +45,23 @@ public class AttendActivity extends AppCompatActivity {
             finish();
         }
 
-        database.getReference("news").child("01").addValueEventListener(new ValueEventListener() {
+        send.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                news1.setText(value);
-            }
+            public void onClick(View v) {
 
+                firebaseDatabase.getReference("users/UID/pNzmDClyLyWiQeWnDC4E3Jqxzpr1/attendance")
+                        .addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                String value = dataSnapshot.getValue(String.class);
+                                attend.setText(value);
+                            }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
 
+                            }
+                        });
             }
         });
 
