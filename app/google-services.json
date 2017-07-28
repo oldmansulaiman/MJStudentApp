@@ -103,6 +103,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "907668225812-ks55qceugnr9mdgm1gft5ivr2vr4ap6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.mjstudentapp",
+            "certificate_hash": "03f4bddc62526b7b5b9a527724b86af40887b73c"
+          }
+        },
+        {
           "client_id": "907668225812-5vbi4u0eft3s7eckubpecfdba1cmbhr2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
