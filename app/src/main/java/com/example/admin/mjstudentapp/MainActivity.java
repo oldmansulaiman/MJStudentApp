@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_drawer);
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference myref = database.getReference();
 
         final TextView news1 = (TextView) findViewById(R.id.news_text1);
         TextView news2 = (TextView) findViewById(R.id.news_text2);

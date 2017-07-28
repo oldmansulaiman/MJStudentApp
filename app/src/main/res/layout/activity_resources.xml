@@ -1,30 +1,2915 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.admin.mjstudentapp.ResourcesActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resources"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#263238"
-        tools:layout_editor_absoluteY="193dp"
-        tools:layout_editor_absoluteX="126dp"
-        android:id="@+id/textView"
-        android:layout_below="@+id/toolbar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <android.support.v7.widget.Toolbar
-        android:layout_height="?attr/actionBarSize"
-        android:layout_width="match_parent"
         android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:background="#f5cba7"
+            android:gravity="center"
+            android:text="Resources"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:background="@color/backcolor"
+            android:onClick="browser1"
+            android:text="Abdul Samad Kamdod"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b1"
+            android:background="@color/backcolor"
+            android:onClick="browser2"
+            android:text="Abdullah Bin Mohammed"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b2"
+            android:background="@color/backcolor"
+            android:onClick="browser3"
+            android:text="Abubaker"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b3"
+            android:background="@color/backcolor"
+            android:onClick="browser4"
+            android:text="Afzal Umesa Ahmed"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b4"
+            android:background="@color/backcolor"
+            android:onClick="browser5"
+            android:text="Ashfaque Jaferi"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b5"
+            android:background="@color/backcolor"
+            android:onClick="browser6"
+            android:text="Asra Fatima"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b6"
+            android:background="@color/backcolor"
+            android:onClick="browser7"
+            android:text="Barkat Ali Khan"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b7"
+            android:background="@color/backcolor"
+            android:onClick="browser8"
+            android:text="D.Ram Mohan Rao"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b8"
+            android:background="@color/backcolor"
+            android:onClick="browser9"
+            android:text="Ghouse Pasha Khan"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b9"
+            android:background="@color/backcolor"
+            android:onClick="browser10"
+            android:text="Husna Nooreen"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b10"
+            android:background="@color/backcolor"
+            android:onClick="browser11"
+            android:text="jagmohan Vijay Jandhyala"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b11"
+            android:background="@color/backcolor"
+            android:onClick="browser12"
+            android:text="K.Sri Lakshmi"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/b13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b12"
+            android:background="@color/backcolor"
+            android:onClick="browser13"
+            android:text="M.Abdul Khalique"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/b14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b13"
+            android:background="@color/backcolor"
+            android:onClick="browser14"
+            android:text="M.Sridevi"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b14"
+            android:background="@color/backcolor"
+            android:onClick="browser15"
+            android:text="Md.Minhajuddin Saif"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b15"
+            android:background="@color/backcolor"
+            android:onClick="browser16"
+            android:text="Md.Moiz Khan"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b16"
+            android:background="@color/backcolor"
+            android:onClick="browser17"
+            android:text="Mohammed Azam Ali"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b17"
+            android:background="@color/backcolor"
+            android:onClick="browser18"
+            android:text="Mohd.Abdullah Shariff"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b18"
+            android:background="@color/backcolor"
+            android:onClick="browser19"
+            android:text="Mohd.Hamraj"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b19"
+            android:background="@color/backcolor"
+            android:onClick="browser20"
+            android:text="Mohad.Masihuddin Siddiqui"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b20"
+            android:background="@color/backcolor"
+            android:onClick="browser21"
+            android:text="Moinuddin Ahmed"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b21"
+            android:background="@color/backcolor"
+            android:onClick="browser22"
+            android:text="Mrinal Gour"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b22"
+            android:background="@color/backcolor"
+            android:onClick="browser23"
+            android:text="S.M.Farooq Basha"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b23"
+            android:background="@color/backcolor"
+            android:onClick="browser24"
+            android:text="Sara Naaz"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b24"
+            android:background="@color/backcolor"
+            android:onClick="browser25"
+            android:text="Shakeel Ayjaz"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b25"
+            android:background="@color/backcolor"
+            android:onClick="browser26"
+            android:text="Suhashini B"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b26"
+            android:background="@color/backcolor"
+            android:onClick="browser27"
+            android:text="Sumaiya Fatima"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b27"
+            android:background="@color/backcolor"
+            android:onClick="browser28"
+            android:text="Syed Jawwad"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b28"
+            android:background="@color/backcolor"
+            android:onClick="browser29"
+            android:text="Syed Saifuddin"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b29"
+            android:background="@color/backcolor"
+            android:onClick="browser30"
+            android:text="Syed Siraj Ul Haq"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b30"
+            android:background="@color/backcolor"
+            android:onClick="browser31"
+            android:text="Syed Yousufuddin"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b31"
+            android:background="@color/backcolor"
+            android:onClick="browser32"
+            android:text="Syeda Najia"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b32"
+            android:background="@color/backcolor"
+            android:onClick="browser33"
+            android:text="Toufeeq Anwar"
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b33"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Computer Science"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t2"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser1"
+            android:text="Afreen Sultana"
+
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb1"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser2"
+
+            android:text="Ahmed"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb2"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser3"
+
+            android:text="Ahmed Moiz Qyser"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb3"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser4"
+
+            android:text="Amena Yasmeen"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb4"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser5"
+
+            android:text="Fahima Taranum"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb5"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser6"
+
+            android:text="Farheen Iqbal"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb6"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser7"
+
+            android:text="Gouri R.Patil"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb7"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser8"
+
+            android:text="J.Srinivas"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb8"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser9"
+
+            android:text="K.Manmohan Rao"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb9"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser10"
+
+            android:text="K.S.Niraja"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb10"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser11"
+
+            android:text="K.Srinivas"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb11"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser12"
+            android:text="   K. Venkata Subba Reddy "
+
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+
+            />
+
+        <Button
+            android:id="@+id/cb13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb12"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser13"
+
+            android:text="   Khaja Zahooruddin Ahmed "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb13"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser14"
+
+            android:text="Krishna Keerthi Channam "
+            android:textColor="@color/textcolor"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb14"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser15"
+
+            android:text="Manjusha Kalekuri "
+            android:textColor="@color/textcolor"
+
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb15"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser16"
+
+            android:text="Md. Saleem Khan "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb16"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser17"
+
+            android:text="Md. Zainuddin Naveed "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb17"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser18"
+
+            android:text="Meer Arshad Ali "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb18"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser19"
+
+            android:text="Meerja Akhil Jabbar "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb19"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser20"
+
+            android:text="Mir Ahmed Ali "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb20"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser21"
+
+            android:text="Mohammad Gouse Baig "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb21"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser22"
+
+            android:text="Mohammed Abdul Raheem "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb22"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser23"
+            android:text="Mohammed Ahmed "
+
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb23"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser24"
+
+            android:text="Mohammed Ahmed "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb24"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser25"
+
+            android:text="Mohammed Mahmood Ali "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb25"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser26"
+
+            android:text="Mohammed Nazeer "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb26"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser27"
+
+            android:text="Mohammed Shabaz Hussain "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb27"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser28"
+
+            android:text="Mohammed Shabaz Hussain "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb28"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser29"
+
+            android:text="Mohammed Sharfuddin "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb29"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser30"
+
+            android:text="Mohammed Umar Farooq "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb30"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser31"
+
+            android:text="Naimoonisa Begum "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb31"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser32"
+
+            android:text="Rafi U Zaman "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb32"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser33"
+
+            android:text="Rajesham Gajula "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/cb34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb33"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser34"
+            android:text="Shoukat Ali "
+
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb34"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser35"
+
+            android:text="Syed Md Akbar Hashmi "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb35"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser36"
+
+            android:text="Syed Mohiuddin "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb36"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser37"
+
+            android:text="Syed Salman Ali "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb37"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser38"
+
+            android:text="Syed shabbeer Ahmad "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cb39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb38"
+            android:background="@color/backcolor"
+            android:onClick="cbrowser39"
+
+            android:text="Syeda Ambareen Rana "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb39"
+            android:layout_marginTop="15dp"
+
+            android:gravity="center"
+            android:text="Electrical and Electronics"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/ebutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t3"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser1"
+            android:text="Ajaz Fatima"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton1"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser2"
+            android:text="Bibi Maryam"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton2"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser3"
+            android:text="Fabia Akbar"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ebutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton3"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser4"
+            android:text="G.Ravikiran"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton4"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser5"
+            android:text="JK Muralidhar"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton5"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser6"
+            android:text="JVR Vithal"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ebutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton6"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser7"
+            android:text="Jaffer Mohd"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton7"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser8"
+            android:text="K Mohammed Rafi"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton8"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser9"
+            android:text="K Sasidhar"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ebutton10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton9"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser10"
+            android:text="MP Soni"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton10"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser11"
+            android:text="Mahaboob Shaik"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton11"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser12"
+            android:text="Mahmooda Mubeen"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ebutton13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton12"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser13"
+            android:text="MD.Abdullah"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton13"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser14"
+            android:text="Md.Haseeb Khan"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton14"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser15"
+            android:text="Md.Umair Quadri"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ebutton16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton15"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser16"
+            android:text="Mohammed Imran"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton16"
+            android:background="@color/backcolor"
+            android:onClick="ebrowser17"
+            android:text="Mohammed Sajid"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton17"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser18"
+            android:text="Mohd.Abdul Muqueet"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ebutton19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton18"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser19"
+            android:text="Mohd.Ismail B"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton19"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser20"
+            android:text="Narjis Begum"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton20"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser21"
+            android:text="Nausheen Bano"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ebutton22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton21"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser22"
+            android:text="P.Bharthi"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton22"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser23"
+            android:text="P.Sai Krishna"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton23"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser24"
+            android:text="Praveen Kumar Joshi"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ebutton25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton24"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser25"
+            android:text="Shaik Qadeer"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton25"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser26"
+            android:text="Shazia Khaliq"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ebutton27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton26"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser27"
+            android:text="Srujana Rasqhupatruni"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ebutton28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton27"
+            android:background="@color/backcolor"
+
+            android:onClick="ebrowser28"
+            android:text="Syed Mahamood Ali"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ebutton28"
+            android:layout_marginTop="15dp"
+
+            android:gravity="center"
+            android:text="Electronics and Communication"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cbutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t4"
+            android:background="@color/backcolor"
+            android:onClick="cbutton1"
+            android:text="Arifuddin Sohel"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton1"
+            android:background="@color/backcolor"
+            android:onClick="cbutton2"
+            android:text="Ayesha Naaz"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton2"
+            android:background="@color/backcolor"
+            android:onClick="cbutton3"
+            android:text="B.Sucharitha"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton3"
+            android:background="@color/backcolor"
+            android:onClick="cbutton4"
+            android:text="G.S.L.B.V.Prashanthi"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton4"
+            android:background="@color/backcolor"
+            android:onClick="cbutton5"
+            android:text="Gabar Othman Gabar"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton5"
+            android:background="@color/backcolor"
+            android:onClick="cbutton6"
+            android:text="Hakeem Aejaz Aslam"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton6"
+            android:background="@color/backcolor"
+            android:onClick="cbutton7"
+            android:text="Iftekharuddin"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton7"
+            android:background="@color/backcolor"
+            android:onClick="cbutton8"
+            android:text="J.Prasanth Kumar"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton8"
+            android:background="@color/backcolor"
+            android:onClick="cbutton9"
+            android:text="Jaideep Kumar Naq"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton9"
+            android:background="@color/backcolor"
+            android:onClick="cbutton10"
+            android:text="Kaleem Fatima"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton10"
+            android:background="@color/backcolor"
+            android:onClick="cbutton11"
+            android:text="Lakshmi Prasanna"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton11"
+            android:background="@color/backcolor"
+            android:onClick="cbutton12"
+            android:text="M.Mohd.Sabir Hussain"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton12"
+            android:background="@color/backcolor"
+            android:onClick="cbutton13"
+            android:text="Maliha Naaz"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton13"
+            android:background="@color/backcolor"
+            android:onClick="cbutton14"
+            android:text="Mazhar Hussain"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton14"
+            android:background="@color/backcolor"
+            android:onClick="cbutton15"
+            android:text="Md.Akram Ahmed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton15"
+            android:background="@color/backcolor"
+            android:onClick="cbutton16"
+            android:text="Md.Noorullah Khan"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton16"
+            android:background="@color/backcolor"
+            android:onClick="cbutton17"
+            android:text="Md.Zakir Hussain"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton17"
+            android:background="@color/backcolor"
+            android:onClick="cbutton18"
+            android:text="MohammedAbdul Raheem"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton18"
+            android:background="@color/backcolor"
+            android:onClick="cbutton19"
+            android:text="Mohammed Imtiaz Raheem"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton19"
+            android:background="@color/backcolor"
+            android:onClick="cbutton20"
+            android:text="Mohd.Muneeruddin"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton20"
+            android:background="@color/backcolor"
+            android:onClick="cbutton21"
+            android:text="Nazeerunnisa"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton21"
+            android:background="@color/backcolor"
+            android:onClick="cbutton22"
+            android:text="Nazia Parveen"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton22"
+            android:background="@color/backcolor"
+            android:onClick="cbutton23"
+            android:text="Peethala Kamala Kumari"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton23"
+            android:background="@color/backcolor"
+            android:onClick="cbutton24"
+            android:text="Rafath Unnisa"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton24"
+            android:background="@color/backcolor"
+            android:onClick="cbutton25"
+            android:text="Rehana Farheen"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton25"
+            android:background="@color/backcolor"
+            android:onClick="cbutton26"
+            android:text="S.K.Ahmeduddin Zakir"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton26"
+            android:background="@color/backcolor"
+            android:onClick="cbutton27"
+            android:text="Salma Fauzia"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton27"
+            android:background="@color/backcolor"
+            android:onClick="cbutton28"
+            android:text="Shaik Sabeera Khader"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton28"
+            android:background="@color/backcolor"
+            android:onClick="cbutton29"
+            android:text="Shubhanqi Saxena"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton29"
+            android:background="@color/backcolor"
+            android:onClick="cbutton30"
+            android:text="Subhan Vali"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/cbutton31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton30"
+            android:background="@color/backcolor"
+            android:onClick="cbutton31"
+            android:text="Syed Hifazath Ali Khan"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbutton31"
+            android:layout_marginTop="15dp"
+
+            android:gravity="center"
+            android:text="Information Technology"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ibutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t5"
+            android:background="@color/backcolor"
+            android:onClick="ibutton1"
+            android:text="Afshan Kaleem"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/ibutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton1"
+            android:background="@color/backcolor"
+            android:onClick="ibutton2"
+            android:text="Alefiah Mubeen"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton2"
+            android:background="@color/backcolor"
+            android:onClick="ibutton3"
+            android:text="Arif MHussain Mohammed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton3"
+            android:background="@color/backcolor"
+            android:onClick="ibutton4"
+            android:text="Asia Sulatan"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton4"
+            android:background="@color/backcolor"
+            android:onClick="ibutton5"
+            android:text="Asrar Ahmed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton5"
+            android:background="@color/backcolor"
+            android:onClick="ibutton6"
+            android:text="Farha Nausheen"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton6"
+            android:background="@color/backcolor"
+            android:onClick="ibutton7"
+            android:text="G.Vani"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton7"
+            android:background="@color/backcolor"
+            android:onClick="ibutton8"
+            android:text="Himayatullah Shareef"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton8"
+            android:background="@color/backcolor"
+            android:onClick="ibutton9"
+            android:text="K.Ramu"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton9"
+            android:background="@color/backcolor"
+            android:onClick="ibutton10"
+            android:text="M.A.Rasheed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton10"
+            android:background="@color/backcolor"
+            android:onClick="ibutton11"
+            android:text="M.Durga Venkata Prasad"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton11"
+            android:background="@color/backcolor"
+            android:onClick="ibutton12"
+            android:text="Maniza Hijab"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton12"
+            android:background="@color/backcolor"
+            android:onClick="ibutton13"
+            android:text="Md.Ibrahim Khaleelullah"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton13"
+            android:background="@color/backcolor"
+            android:onClick="ibutton14"
+            android:text="Mohammed Abdul Wajid"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton14"
+            android:background="@color/backcolor"
+            android:onClick="ibutton15"
+            android:text="Mohammed Afroze"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton15"
+            android:background="@color/backcolor"
+            android:onClick="ibutton16"
+            android:text="Mohammed Pasha"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton16"
+            android:background="@color/backcolor"
+            android:onClick="ibutton17"
+            android:text="Mohammed Riyazuddin"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton17"
+            android:background="@color/backcolor"
+            android:onClick="ibutton18"
+            android:text="Mohammed Sarfaraz Ahmed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton18"
+            android:background="@color/backcolor"
+            android:onClick="ibutton19"
+            android:text="Munavvara Tahaseen"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton19"
+            android:background="@color/backcolor"
+            android:onClick="ibutton20"
+            android:text="N.Md>Jubair Basha"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton20"
+            android:background="@color/backcolor"
+            android:onClick="ibutton21"
+            android:text="Syeda Hajera Begum"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton21"
+            android:background="@color/backcolor"
+            android:onClick="ibutton22"
+            android:text="Shaik Rasool"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton22"
+            android:background="@color/backcolor"
+            android:onClick="ibutton23"
+            android:text="Syed Azhar Ali"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton23"
+            android:background="@color/backcolor"
+            android:onClick="ibutton24"
+            android:text="Syeda Fouzia Sayeedunnisa"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/ibutton25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton24"
+            android:background="@color/backcolor"
+            android:onClick="ibutton25"
+            android:text="Uma N.Dulhare"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibutton25"
+            android:layout_centerHorizontal="true"
+
+            android:gravity="center"
+            android:text="Mechanical"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t6"
+            android:background="@color/backcolor"
+            android:onClick="mbutton1"
+            android:text="A.S.Reddy"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/mbutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton1"
+            android:background="@color/backcolor"
+            android:onClick="mbutton2"
+            android:text="Abdul Raheem Junaidi"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton2"
+            android:background="@color/backcolor"
+            android:onClick="mbutton3"
+            android:text="Afroz Mehar"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton3"
+            android:background="@color/backcolor"
+            android:onClick="mbutton4"
+            android:text="B.D.Y Sunil"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton4"
+            android:background="@color/backcolor"
+            android:onClick="mbutton5"
+            android:text="D. Srinivas Rao"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton5"
+            android:background="@color/backcolor"
+            android:onClick="mbutton6"
+            android:text="Dhanraj Pamar Jarapla"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton6"
+            android:background="@color/backcolor"
+            android:onClick="mbutton7"
+            android:text="Dharam Singh V"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton7"
+            android:background="@color/backcolor"
+            android:onClick="mbutton8"
+            android:text="G. Bhasker"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton8"
+            android:background="@color/backcolor"
+            android:onClick="mbutton9"
+            android:text="G. M. Sayeed Ahmed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton9"
+            android:background="@color/backcolor"
+            android:onClick="mbutton10"
+            android:text="G.Prasanna Kumar"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton10"
+            android:background="@color/backcolor"
+            android:onClick="mbutton11"
+            android:text="G. Sailaja"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton11"
+            android:background="@color/backcolor"
+            android:onClick="mbutton12"
+            android:text="Hakeemuddin Ahmed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton12"
+            android:background="@color/backcolor"
+            android:onClick="mbutton13"
+            android:text="Hanumantu Krishnamurthy Dora"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton13"
+            android:background="@color/backcolor"
+            android:onClick="mbutton14"
+            android:text="Ishrat M.Mirzana"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton14"
+            android:background="@color/backcolor"
+            android:onClick="mbutton15"
+            android:text="Joseph George Konnully"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton15"
+            android:background="@color/backcolor"
+            android:onClick="mbutton16"
+            android:text="K.Hema Latha"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton16"
+            android:background="@color/backcolor"
+            android:onClick="mbutton17"
+            android:text="K.N.Krishnan"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton17"
+            android:background="@color/backcolor"
+            android:onClick="mbutton18"
+            android:text="M.Raju"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton18"
+            android:background="@color/backcolor"
+            android:onClick="mbutton19"
+            android:text="M.Sowjanya"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton19"
+            android:background="@color/backcolor"
+            android:onClick="mbutton20"
+            android:text="M.A.Mujeeb Iqbal"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton20"
+            android:background="@color/backcolor"
+            android:onClick="mbutton21"
+            android:text="Md.Viquar Mohiuddin"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton21"
+            android:background="@color/backcolor"
+            android:onClick="mbutton22"
+            android:text="Mohammed Yahiya"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton22"
+            android:background="@color/backcolor"
+            android:onClick="mbutton23"
+            android:text="Mohd Hasham Ali"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton23"
+            android:background="@color/backcolor"
+            android:onClick="mbutton24"
+            android:text="Mohd.Abdul Samad"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton24"
+            android:background="@color/backcolor"
+            android:onClick="mbutton25"
+            android:text="Mohd.Mohinoddin"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mbutton26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton25"
+            android:background="@color/backcolor"
+            android:onClick="mbutton26"
+
+            android:text="Mohd.Sadak Ali Khan"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton26"
+            android:background="@color/backcolor"
+            android:onClick="mbutton27"
+
+            android:text="N.Seetharamiah"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton27"
+            android:background="@color/backcolor"
+            android:onClick="mbutton28"
+
+            android:text="N.B.V.Lakshmi Kumari"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/mbutton29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton28"
+            android:background="@color/backcolor"
+            android:onClick="mbutton29"
+
+            android:text="Naseema"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/mbutton30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton29"
+            android:background="@color/backcolor"
+            android:onClick="mbutton30"
+
+            android:text="P.Nageshwara Rao"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton30"
+            android:background="@color/backcolor"
+            android:onClick="mbutton31"
+
+            android:text="S.Irfan Sadaq"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/mbutton32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton31"
+            android:background="@color/backcolor"
+            android:onClick="mbutton32"
+
+            android:text="S.Shahar Banu"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/mbutton33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton32"
+            android:background="@color/backcolor"
+            android:onClick="mbutton33"
+
+            android:text="Shaik Khadar Vali"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/mbutton34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton33"
+            android:background="@color/backcolor"
+            android:onClick="mbutton34"
+            android:text="Sirajuddin Elyas Khan"
+
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton34"
+            android:background="@color/backcolor"
+            android:onClick="mbutton35"
+
+            android:text="Suvarna Kumar"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton35"
+            android:background="@color/backcolor"
+            android:onClick="mbutton36"
+
+            android:text="Syed Adil"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton36"
+            android:background="@color/backcolor"
+            android:onClick="mbutton37"
+
+            android:text="Syed Ferhathullah Hussainy"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton37"
+            android:background="@color/backcolor"
+            android:onClick="mbutton38"
+
+            android:text="Syed Khader Basha"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton38"
+            android:background="@color/backcolor"
+            android:onClick="mbutton39"
+
+            android:text="Syed Nawazish Mehdi"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mbutton40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton39"
+            android:background="@color/backcolor"
+            android:onClick="mbutton40"
+
+            android:text="Syed Romana"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbutton40"
+            android:layout_marginTop="15dp"
+
+            android:gravity="center"
+            android:text="Mechanics and Graphics"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/gbutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t7"
+            android:background="@color/backcolor"
+            android:onClick="gbutton1"
+            android:text="Amatul Quadeer"
+            android:textColor="@color/textcolor" />
+
+
+        <Button
+            android:id="@+id/gbutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton1"
+            android:background="@color/backcolor"
+            android:onClick="gbutton2"
+            android:text="Asqar Ullah Khan"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton2"
+            android:background="@color/backcolor"
+            android:onClick="gbutton3"
+            android:text="Asma Sultana"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton3"
+            android:background="@color/backcolor"
+            android:onClick="gbutton4"
+            android:text="Iffat Naseem"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton4"
+            android:background="@color/backcolor"
+            android:onClick="gbutton5"
+            android:text="Md.Khaja Azhar Ali Siddiqui"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton5"
+            android:background="@color/backcolor"
+            android:onClick="gbutton6"
+            android:text="Mohammed Irfan Ali"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton6"
+            android:background="@color/backcolor"
+            android:onClick="gbutton7"
+            android:text="Mohd.Irfan"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton7"
+            android:background="@color/backcolor"
+            android:onClick="gbutton8"
+            android:text="Oumama Govher"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton8"
+            android:background="@color/backcolor"
+            android:onClick="gbutton9"
+            android:text="Qamar Sultana"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton9"
+            android:background="@color/backcolor"
+            android:onClick="gbutton10"
+            android:text="Salma Sultana"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton10"
+            android:background="@color/backcolor"
+            android:onClick="gbutton11"
+            android:text="Syed Muzammil Shah"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton11"
+            android:background="@color/backcolor"
+            android:onClick="gbutton12"
+            android:text="Syed Yousuf Hussaini"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/gbutton13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton12"
+            android:background="@color/backcolor"
+            android:onClick="gbutton13"
+            android:text="T.Bharat Kumar"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/t8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gbutton13"
+            android:layout_marginLeft="100dp"
+
+            android:text="Mathematics Department"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mabutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t8"
+            android:background="@color/backcolor"
+            android:onClick="mabutton1"
+            android:text="Abdul Majeed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton1"
+            android:background="@color/backcolor"
+            android:onClick="mabutton2"
+            android:text="Hussain Basha"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton2"
+            android:background="@color/backcolor"
+            android:onClick="mabutton3"
+            android:text="Ismath Aijaz"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton3"
+            android:background="@color/backcolor"
+            android:onClick="mabutton4"
+            android:text="M.A.Haleem Rizwan"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton4"
+            android:background="@color/backcolor"
+            android:onClick="mabutton5"
+            android:text="M.Poorvanthi"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton5"
+            android:background="@color/backcolor"
+            android:onClick="mabutton6"
+            android:text="Md.Abdul Rawoof Sayeed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton6"
+            android:background="@color/backcolor"
+            android:onClick="mabutton7"
+            android:text="Md.Naheed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton7"
+            android:background="@color/backcolor"
+            android:onClick="mabutton8"
+            android:text="Sameena Mujeeb"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton8"
+            android:background="@color/backcolor"
+            android:onClick="mabutton9"
+            android:text="Shaik Nuslin Bibi"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton9"
+            android:background="@color/backcolor"
+            android:onClick="mabutton10"
+            android:text="Syed Amanullah Hussaini"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/mabutton11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton10"
+            android:background="@color/backcolor"
+            android:onClick="mabutton11"
+            android:text="Syed Iqbal Ahmed"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/t9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mabutton11"
+            android:layout_marginLeft="100dp"
+
+            android:text="Physics Department"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pbutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t9"
+            android:background="@color/backcolor"
+            android:onClick="pbutton1"
+            android:text="Dr.Abdul Gaffoor"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton1"
+            android:background="@color/backcolor"
+            android:onClick="pbutton2"
+            android:text="Dr.Narwa Rakeshchan"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton2"
+            android:background="@color/backcolor"
+            android:onClick="pbutton3"
+            android:text="Dr.Shaik Kareem Ahmed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton3"
+            android:background="@color/backcolor"
+            android:onClick="pbutton4"
+            android:text="M.A.Khadeer"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton4"
+            android:background="@color/backcolor"
+            android:onClick="pbutton5"
+            android:text="M.S.S.Bharthi"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton5"
+            android:background="@color/backcolor"
+            android:onClick="pbutton6"
+            android:text="Md.Ehteshamuddin Aziz"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton6"
+            android:background="@color/backcolor"
+            android:onClick="pbutton7"
+            android:text="Md.Raheem Ahmed"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton7"
+            android:background="@color/backcolor"
+            android:onClick="pbutton8"
+            android:text="P.Neelima"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton8"
+            android:background="@color/backcolor"
+            android:onClick="pbutton9"
+            android:text="Prashanth Kumar Vaidya"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton9"
+            android:background="@color/backcolor"
+            android:onClick="pbutton10"
+            android:text="Shaik Zameeruddin"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/pbutton11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton10"
+            android:background="@color/backcolor"
+            android:onClick="pbutton11"
+            android:text="Syed Ilyas Mohiuddin"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/t10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbutton11"
+            android:layout_marginLeft="100dp"
+
+            android:text="Chemistry Department"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/chbutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t10"
+            android:background="@color/backcolor"
+            android:onClick="chbutton1"
+            android:text="Amina Sarwar"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/chbutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chbutton1"
+            android:background="@color/backcolor"
+            android:onClick="chbutton2"
+            android:text="Aneesa Ferdose"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/chbutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chbutton2"
+            android:background="@color/backcolor"
+            android:onClick="chbutton3"
+            android:text="K.M.A.Shareef"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/chbutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chbutton3"
+            android:background="@color/backcolor"
+            android:onClick="chbutton4"
+            android:text="P.Shobha Rani"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/chbutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chbutton4"
+            android:background="@color/backcolor"
+            android:onClick="chbutton5"
+            android:text="Sariah Sana"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/chbutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chbutton5"
+            android:background="@color/backcolor"
+            android:onClick="chbutton6"
+            android:text="Satyanarayana M.G.V"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/chbutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chbutton6"
+            android:background="@color/backcolor"
+            android:onClick="chbutton7"
+            android:text="Syeda Arshia Banu"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/chbutton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chbutton7"
+            android:background="@color/backcolor"
+            android:onClick="chbutton8"
+            android:text="Y.Shanthi"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/chbutton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chbutton8"
+            android:background="@color/backcolor"
+            android:onClick="chbutton9"
+            android:text="Y.Arun Kumar"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/t11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chbutton9"
+            android:layout_marginLeft="100dp"
+
+            android:text="English Department"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/enbutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t11"
+            android:background="@color/backcolor"
+            android:onClick="enbutton1"
+            android:text="Gazala Anjum"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/enbutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enbutton1"
+            android:background="@color/backcolor"
+            android:onClick="enbutton2"
+            android:text="Gitasri Mukherjee"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/enbutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enbutton2"
+            android:background="@color/backcolor"
+            android:onClick="enbutton3"
+            android:text="Nirmala Nair"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/enbutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enbutton3"
+            android:background="@color/backcolor"
+            android:onClick="enbutton4"
+            android:text="Shabana Tahniath"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/enbutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enbutton4"
+            android:background="@color/backcolor"
+            android:onClick="enbutton5"
+            android:text="Sher Muhammed Khan"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/enbutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enbutton5"
+            android:background="@color/backcolor"
+            android:onClick="enbutton6"
+            android:text="Shouket Ahmed Tilwani"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/enbutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enbutton6"
+            android:background="@color/backcolor"
+            android:onClick="enbutton7"
+            android:text="T.Anitha"
+            android:textColor="@color/textcolor" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/t1"
+            android:layout_alignEnd="@+id/t5"
+            android:layout_alignRight="@+id/t5"
+            android:layout_marginBottom="47dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

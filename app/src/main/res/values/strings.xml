@@ -37,4 +37,17 @@
     <string name="bushra">Bushra</string>
     <string name="sulaiman">sulaiman</string>
     <string name="special_thanks">Special thanks</string>
+    <string name="text_with_paragraphs1">
+ To be a part of universal human quest for
+        development and progress by contributing high
+        caliber,ethical and socially responsible engineers
+        who meet the global challenge of building modern society
+        in harmony with nature.
+</string>
+    <string name="text_with_paragraphs">
+    To attain excellence in imparting technical education
+        from the undergraduate through doctoral levels by
+        adopting coherent and judiciously coordinated curricular
+        and co-curricular programs.
+    </string>
 </resources>

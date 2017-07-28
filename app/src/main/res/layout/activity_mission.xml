@@ -7,24 +7,44 @@
     tools:context="com.example.admin.mjstudentapp.MissionActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mission"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#263238"
-        tools:layout_editor_absoluteY="193dp"
-        tools:layout_editor_absoluteX="126dp"
-        android:id="@+id/textView"
         android:layout_below="@+id/toolbar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp" />
+        android:layout_marginTop="19dp"
+        android:text="Mission"
+        android:textColor="#263238"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="193dp" />
 
     <android.support.v7.widget.Toolbar
-        android:layout_height="?attr/actionBarSize"
-        android:layout_width="match_parent"
         android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/text_with_paragraphs1"
+        android:textColor="#ecf0f1"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="60dp"
+        android:text="MISSION"
+        android:textColor="#d7dbdd"
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
