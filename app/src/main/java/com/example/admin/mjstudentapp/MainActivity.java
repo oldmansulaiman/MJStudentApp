@@ -2,9 +2,7 @@ package com.example.admin.mjstudentapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,15 +11,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -30,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    TextView news1, news2, news3, news4, news5;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    final DatabaseReference myref = database.getReference();
     private FirebaseAuth firebaseAuth;
     private DatabaseReference mDatabase;
     private ListView mUserList;
@@ -40,6 +41,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_drawer);
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference myref = database.getReference();
+
+        final TextView news1 = (TextView) findViewById(R.id.news_text1);
+        TextView news2 = (TextView) findViewById(R.id.news_text2);
+        TextView news3 = (TextView) findViewById(R.id.news_text3);
+        TextView news4 = (TextView) findViewById(R.id.news_text4);
+        TextView news5 = (TextView) findViewById(R.id.news_text5);
+
+        database.getReference("news").child("01").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String value = dataSnapshot.getValue(String.class);
+                news1.setText(value);
+            }
+
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
 
 
@@ -67,55 +90,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
-        setContentView(R.layout.activity_main);
 
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("news");
-        mUserList = (ListView) findViewById(R.id.user_list);
-
-        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mUsernames);
-
-        mUserList.setAdapter(arrayAdapter);
-
-        mDatabase.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                String value = dataSnapshot.getValue(String.class);
-                mUsernames.add(value);
-
-                String key = dataSnapshot.getKey();
-                mKeys.add(key);
-
-                arrayAdapter.notifyDataSetChanged();
-
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-
-
-    }
 
 
     @Override
