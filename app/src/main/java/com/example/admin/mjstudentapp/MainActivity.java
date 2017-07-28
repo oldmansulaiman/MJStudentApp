@@ -11,60 +11,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-    TextView news1, news2, news3, news4, news5;
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    final DatabaseReference myref = database.getReference();
     private FirebaseAuth firebaseAuth;
-    private DatabaseReference mDatabase;
-    private ListView mUserList;
-    private ArrayList<String> mUsernames = new ArrayList<>();
-    private ArrayList<String> mKeys = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_drawer);
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference myref = database.getReference();
-
-        final TextView news1 = (TextView) findViewById(R.id.news_text1);
-        TextView news2 = (TextView) findViewById(R.id.news_text2);
-        TextView news3 = (TextView) findViewById(R.id.news_text3);
-        TextView news4 = (TextView) findViewById(R.id.news_text4);
-        TextView news5 = (TextView) findViewById(R.id.news_text5);
-
-        database.getReference("news").child("01").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                news1.setText(value);
-            }
-
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-
-
 
         firebaseAuth = FirebaseAuth.getInstance();
         if (firebaseAuth.getCurrentUser() == null) {
@@ -164,22 +124,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent3);
                 break;
 
+            case R.id.almanac_id:
+
+                Intent intent4 = new Intent(MainActivity.this, AlmanacActivity.class);
+                startActivity(intent4);
+                break;
+
             case R.id.vision_id:
 
-                Intent intent4 = new Intent(MainActivity.this, VisionActivity.class);
-                startActivity(intent4);
+                Intent intent5 = new Intent(MainActivity.this, VisionActivity.class);
+                startActivity(intent5);
                 break;
 
             case R.id.mission_id:
 
-                Intent intent5 = new Intent(MainActivity.this, MissionActivity.class);
-                startActivity(intent5);
+                Intent intent6 = new Intent(MainActivity.this, MissionActivity.class);
+                startActivity(intent6);
                 break;
 
             case R.id.about_us_id:
 
-                Intent intent6 = new Intent(MainActivity.this, AboutActivity.class);
-                startActivity(intent6);
+                Intent intent7 = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(intent7);
                 break;
         }
 
