@@ -25,7 +25,6 @@
         <activity android:name=".VisionActivity" />
         <activity android:name=".MissionActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".AlmanacActivity"></activity>
     </application>
 
 </manifest>
