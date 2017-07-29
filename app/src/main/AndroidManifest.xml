@@ -30,7 +30,8 @@
         <activity android:name=".ImportantcontactsActivity" />
         <activity android:name=".TimetablesActivity" />
         <activity android:name=".TimingsActivity" />
-        <activity android:name=".EmptyActivity"></activity>
+        <activity android:name=".EmptyActivity" />
+        <activity android:name=".EmptyActivity2"></activity>
     </application>
 
 </manifest>
