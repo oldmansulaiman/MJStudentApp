@@ -34,80 +34,90 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
             android:text="\nDean's Office: Room No. 1001"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex1"
+            android:layout_centerHorizontal="true"
             android:text="\nPrincipal's Office: Room No. 5112"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex2"
+            android:layout_centerHorizontal="true"
             android:text="\nDirector's Office : Room No. 5111"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex3"
+            android:layout_centerHorizontal="true"
             android:text="\nIT HOD Office : Room No. 5202"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex4"
+            android:layout_centerHorizontal="true"
             android:text="\nCSE HOD Office : Room No. 5501"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex5"
+            android:layout_centerHorizontal="true"
             android:text="\nECE HOD Office : Room No.1104"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex6"
+            android:layout_centerHorizontal="true"
             android:text="\nCivil HOD Office : Room No. 1204"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex7"
+            android:layout_centerHorizontal="true"
             android:text="\nMECH HOD Office : Room No. 1223"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex8"
+            android:layout_centerHorizontal="true"
             android:text="\nEEE HOD Office : Room No. 1305"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex9"
+            android:layout_centerHorizontal="true"
             android:text="\nLAB ROOM NUMBERS FOR FIRST YEAR STUDENTS"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
@@ -115,48 +125,54 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex10"
+            android:layout_centerHorizontal="true"
             android:text="\nC Programming Lab : Room No. 2201"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex11"
+            android:layout_centerHorizontal="true"
             android:text="\nGraphics Lab : Room No. 1305"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex12"
+            android:layout_centerHorizontal="true"
             android:text="\nPhysics Lab : Room No. 4006"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex13"
+            android:layout_centerHorizontal="true"
             android:text="\nChemistry Lab : Room No. 2001"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex14"
+            android:layout_centerHorizontal="true"
             android:text="\nEnglish Lab : Room No. 1008"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tex16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tex15"
+            android:layout_centerHorizontal="true"
             android:text="\nWorkshop : Block 3 D"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
 
     </RelativeLayout>
