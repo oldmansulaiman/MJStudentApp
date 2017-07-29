@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -24,7 +23,6 @@ public class AttendActivity extends AppCompatActivity {
         setContentView(R.layout.activity_attend);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final TextView news1 = (TextView) findViewById(R.id.news_text1);
         final DatabaseReference myref = database.getReference();
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);

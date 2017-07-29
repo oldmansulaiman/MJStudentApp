@@ -19,12 +19,17 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".AttendActivity" />
+        <activity android:name=".AlmanacActivity" />
         <activity android:name=".MarksActivity" />
         <activity android:name=".StudentActivity" />
         <activity android:name=".ResourcesActivity" />
         <activity android:name=".VisionActivity" />
         <activity android:name=".MissionActivity" />
         <activity android:name=".AboutActivity" />
+        <activity android:name=".CollegeguideActivity" />
+        <activity android:name=".ImportantcontactsActivity" />
+        <activity android:name=".TimetablesActivity" />
+        <activity android:name=".TimingsActivity"></activity>
     </application>
 
 </manifest>

@@ -100,52 +100,64 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (id) {
 
-            case R.id.attendance_id:
+            case R.id.almanac_id:
 
-                Intent intent = new Intent(MainActivity.this, AttendActivity.class);
+                Intent intent = new Intent(MainActivity.this, AlmanacActivity.class);
                 startActivity(intent);
                 break;
 
-            case R.id.marks_id:
+            case R.id.college_guide_id:
 
-                Intent intent1 = new Intent(MainActivity.this, MarksActivity.class);
+                Intent intent1 = new Intent(MainActivity.this, CollegeguideActivity.class);
                 startActivity(intent1);
                 break;
 
-            case R.id.student_activities_id:
+            case R.id.important_contacts_id:
 
-                Intent intent2 = new Intent(MainActivity.this, StudentActivity.class);
+                Intent intent2 = new Intent(MainActivity.this, ImportantcontactsActivity.class);
                 startActivity(intent2);
-                break;
-
-            case R.id.resources_id:
-
-                Intent intent3 = new Intent(MainActivity.this, ResourcesActivity.class);
-                startActivity(intent3);
-                break;
-
-            case R.id.almanac_id:
-
-                Intent intent4 = new Intent(MainActivity.this, AlmanacActivity.class);
-                startActivity(intent4);
-                break;
-
-            case R.id.vision_id:
-
-                Intent intent5 = new Intent(MainActivity.this, VisionActivity.class);
-                startActivity(intent5);
                 break;
 
             case R.id.mission_id:
 
-                Intent intent6 = new Intent(MainActivity.this, MissionActivity.class);
+                Intent intent3 = new Intent(MainActivity.this, MissionActivity.class);
+                startActivity(intent3);
+                break;
+
+            case R.id.resources_id:
+
+                Intent intent4 = new Intent(MainActivity.this, ResourcesActivity.class);
+                startActivity(intent4);
+                break;
+
+            case R.id.student_activities_id:
+
+                Intent intent5 = new Intent(MainActivity.this, StudentActivity.class);
+                startActivity(intent5);
+                break;
+
+            case R.id.timetables_id:
+
+                Intent intent6 = new Intent(MainActivity.this, TimetablesActivity.class);
                 startActivity(intent6);
+                break;
+
+            case R.id.timings_id:
+
+                Intent intent7 = new Intent(MainActivity.this, TimingsActivity.class);
+                startActivity(intent7);
+                break;
+
+            case R.id.vision_id:
+
+                Intent intent8 = new Intent(MainActivity.this, VisionActivity.class);
+                startActivity(intent8);
                 break;
 
             case R.id.about_us_id:
 
-                Intent intent7 = new Intent(MainActivity.this, AboutActivity.class);
-                startActivity(intent7);
+                Intent intent9 = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(intent9);
                 break;
         }
 

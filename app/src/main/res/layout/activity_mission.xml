@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d7ccc8"
     tools:context="com.example.admin.mjstudentapp.MissionActivity">
 
     <TextView
@@ -33,18 +34,9 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="170dp"
         android:text="@string/text_with_paragraphs1"
-        android:textColor="#ecf0f1"
+        android:textColor="#000000"
         android:textSize="25dp"
         android:textStyle="italic" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="83dp"
-        android:layout_marginTop="60dp"
-        android:text="MISSION"
-        android:textColor="#d7dbdd"
-        android:textSize="50dp"
-        android:textStyle="bold" />
 
 </RelativeLayout>
