@@ -29,7 +29,8 @@
         <activity android:name=".CollegeguideActivity" />
         <activity android:name=".ImportantcontactsActivity" />
         <activity android:name=".TimetablesActivity" />
-        <activity android:name=".TimingsActivity"></activity>
+        <activity android:name=".TimingsActivity" />
+        <activity android:name=".EmptyActivity"></activity>
     </application>
 
 </manifest>

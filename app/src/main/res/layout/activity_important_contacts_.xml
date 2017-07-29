@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7ccc8"
+    tools:context="com.example.admin.mjstudentapp.ImportantcontactsActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Important Contacts"
+        android:textColor="#263238"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <TextView
+        android:id="@+id/te1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Dr. Basheer Ahmed (Director): 040 23280301"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+    android:id="@+id/te2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:text="N Krishnan (Principal): 040 23280302"
+    android:layout_below="@+id/te1"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="13dp" />
+    <TextView
+    android:id="@+id/te3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:text="Vice Principal: 040 23280307 / 040 23353428 "
+    android:layout_below="@+id/te2"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/te4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Registrar: 040 23280304"
+        android:layout_below="@+id/te3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/te5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Heads Of Department "
+        android:layout_below="@+id/te4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/te6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Dr. Mohammed Hamraj (Civil Dept.)"
+        android:layout_below="@+id/te5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/te7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te6"
+        android:text="Phone Number: +91 9290929482"/>
+    <TextView
+        android:id="@+id/te8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te7"
+        android:text="Landline Number: 040 23280321"/>
+    <TextView
+        android:id="@+id/te9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Dr. N.Seetharamaiah (Mech/Prod Dept.) "
+        android:layout_below="@+id/te8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/te10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te9"
+        android:text="Phone Number: +91 99849402284"/>
+    <TextView
+        android:id="@+id/te11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te10"
+        android:text="Landline Number: 040 23280371"
+        />
+    <TextView
+    android:id="@+id/te12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:text="Ahmed Abdul Moiz Qyser (CSE Dept.) "
+    android:layout_below="@+id/te11"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/te13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te12"
+        android:text="Phone Number: +91 988545451"/>
+    <TextView
+        android:id="@+id/te14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te13"
+        android:text="Landline Number: 040 23280331"
+        />
+    <TextView
+        android:id="@+id/te15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Mousmi Ajay Chaurasia (IT Dept.) "
+        android:layout_below="@+id/te14"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/te16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te15"
+        android:text="Phone Number: +91 9160146701"/>
+    <TextView
+        android:id="@+id/te17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te16"
+        android:text="Landline Number: 040 23280361"
+        />
+    <TextView
+        android:id="@+id/te18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Arifuddin Sohel (ECE Dept.) "
+        android:layout_below="@+id/te17"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/te19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te18"
+        android:text="Phone Number: +91 9885407094"/>
+    <TextView
+        android:id="@+id/te20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te19"
+        android:text="Landline Number: 040 23280341"
+        />
+    <TextView
+        android:id="@+id/te21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Dr. Md Haseeb Khan (EEE/EIE Dept.)"
+        android:layout_below="@+id/te20"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/te22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te21"
+        android:text="Phone Number: +91 9849316285"/>
+    <TextView
+        android:id="@+id/te23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/te22"
+        android:text="Landline Number: 040 23280351"
+        />
+
+</RelativeLayout>
+
+</ScrollView>
+
