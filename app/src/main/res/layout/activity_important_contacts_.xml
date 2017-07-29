@@ -9,7 +9,7 @@
 
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView"
@@ -36,50 +36,50 @@
         android:id="@+id/te1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Dr. Basheer Ahmed (Director): 040 23280301"
-        android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="13dp" />
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="13dp"
+        android:text="Dr. Basheer Ahmed (Director): 040 23280301"
+        android:textSize="15sp" />
 
     <TextView
     android:id="@+id/te2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textSize="15sp"
-    android:text="N Krishnan (Principal): 040 23280302"
-    android:layout_below="@+id/te1"
     android:layout_alignParentStart="true"
-    android:layout_marginTop="13dp" />
+        android:layout_below="@+id/te1"
+        android:layout_marginTop="13dp"
+        android:text="N Krishnan (Principal): 040 23280302"
+        android:textSize="15sp" />
     <TextView
     android:id="@+id/te3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textSize="15sp"
-    android:text="Vice Principal: 040 23280307 / 040 23353428 "
-    android:layout_below="@+id/te2"
     android:layout_alignParentStart="true"
-    android:layout_marginTop="13dp" />
+        android:layout_below="@+id/te2"
+        android:layout_marginTop="13dp"
+        android:text="Vice Principal: 040 23280307 / 040 23353428 "
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/te4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Registrar: 040 23280304"
-        android:layout_below="@+id/te3"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="13dp" />
+        android:layout_below="@+id/te3"
+        android:layout_marginTop="13dp"
+        android:text="Registrar: 040 23280304"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/te5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="Heads Of Department "
-        android:layout_below="@+id/te4"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/te4"
         android:layout_marginTop="13dp"
+        android:text="Heads Of Department "
+        android:textSize="18sp"
         android:textStyle="bold"
         />
 
@@ -87,11 +87,11 @@
         android:id="@+id/te6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Dr. Mohammed Hamraj (Civil Dept.)"
-        android:layout_below="@+id/te5"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="13dp" />
+        android:layout_below="@+id/te5"
+        android:layout_marginTop="13dp"
+        android:text="Dr. Mohammed Hamraj (Civil Dept.)"
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/te7"
         android:layout_width="wrap_content"
@@ -108,11 +108,11 @@
         android:id="@+id/te9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Dr. N.Seetharamaiah (Mech/Prod Dept.) "
-        android:layout_below="@+id/te8"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="13dp" />
+        android:layout_below="@+id/te8"
+        android:layout_marginTop="13dp"
+        android:text="Dr. N.Seetharamaiah (Mech/Prod Dept.) "
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/te10"
         android:layout_width="wrap_content"
@@ -130,11 +130,11 @@
     android:id="@+id/te12"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textSize="15sp"
-    android:text="Ahmed Abdul Moiz Qyser (CSE Dept.) "
-    android:layout_below="@+id/te11"
     android:layout_alignParentStart="true"
-    android:layout_marginTop="13dp" />
+        android:layout_below="@+id/te11"
+        android:layout_marginTop="13dp"
+        android:text="Ahmed Abdul Moiz Qyser (CSE Dept.) "
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/te13"
         android:layout_width="wrap_content"
@@ -152,11 +152,11 @@
         android:id="@+id/te15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Mousmi Ajay Chaurasia (IT Dept.) "
-        android:layout_below="@+id/te14"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="13dp" />
+        android:layout_below="@+id/te14"
+        android:layout_marginTop="13dp"
+        android:text="Mousmi Ajay Chaurasia (IT Dept.) "
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/te16"
         android:layout_width="wrap_content"
@@ -174,11 +174,11 @@
         android:id="@+id/te18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Arifuddin Sohel (ECE Dept.) "
-        android:layout_below="@+id/te17"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="13dp" />
+        android:layout_below="@+id/te17"
+        android:layout_marginTop="13dp"
+        android:text="Arifuddin Sohel (ECE Dept.) "
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/te19"
         android:layout_width="wrap_content"
@@ -196,11 +196,11 @@
         android:id="@+id/te21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Dr. Md Haseeb Khan (EEE/EIE Dept.)"
-        android:layout_below="@+id/te20"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="13dp" />
+        android:layout_below="@+id/te20"
+        android:layout_marginTop="13dp"
+        android:text="Dr. Md Haseeb Khan (EEE/EIE Dept.)"
+        android:textSize="15sp" />
     <TextView
         android:id="@+id/te22"
         android:layout_width="wrap_content"
